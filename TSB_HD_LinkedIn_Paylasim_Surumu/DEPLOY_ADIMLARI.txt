@@ -1,0 +1,31 @@
+TSB HD KÂRLILIK ANALİZİ — PAYLAŞIM SÜRÜMÜ
+
+1) GitHub'da yeni repository oluştur.
+   Örnek isim: tsb-hd-karlilik-analizi
+
+2) Bu klasördeki TÜM dosyaları GitHub repository'nin ana dizinine yükle:
+   - app.py
+   - initial_history.json
+   - tsb_engine.py
+   - requirements.txt
+   - README.md
+   - .streamlit/config.toml
+
+3) Streamlit Community Cloud'u aç ve GitHub hesabınla giriş yap.
+
+4) Create app > mevcut GitHub uygulamasını deploy et seçeneğini kullan.
+
+5) Repository: az önce oluşturduğun repo
+   Branch: main
+   Main file / Entrypoint: app.py
+
+6) İstersen uygulama adresini kısalt:
+   Örnek: tsb-hd-karlilik.streamlit.app
+
+7) Deploy düğmesine bas.
+
+8) Açıldıktan sonra paylaşım ayarını kontrol et:
+   - LinkedIn için: Public
+   - Sadece belirli arkadaşlar için: Private + viewer daveti
+
+Bu sürüm salt okunurdur; Veri Güncelleme ekranı yoktur.
