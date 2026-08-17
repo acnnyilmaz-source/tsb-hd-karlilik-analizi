@@ -1435,9 +1435,15 @@ def main() -> None:
             st.caption(f"Tek dönem mevcut: {current}")
         st.divider()
         st.markdown(
-            f"<div class='small-muted'><b>{APP_VERSION}</b> · DERK dahil H/P<br>Pazar payı · reel büyüme · net kâr<br>Teknik sonuç / brüt prim<br><br>Kaynak: Türkiye Sigorta Birliği’nin kamuya açık finansal tabloları.</div>",f"Bağımsız analiz çalışmasıdır; veri sağlayıcının resmi uygulaması değildir."
-            unsafe_allow_html=True,
-        )
+    (
+        f"<div class='small-muted'><b>{APP_VERSION}</b> · DERK dahil H/P<br>"
+        "Pazar payı · reel büyüme · net kâr<br>"
+        "Teknik sonuç / brüt prim<br><br>"
+        "Kaynak: Türkiye Sigorta Birliği'nin kamuya açık finansal tabloları.<br><br>"
+        "Bağımsız analiz çalışmasıdır; veri sağlayıcının resmi uygulaması değildir.</div>"
+    ),
+    unsafe_allow_html=True,
+)
 
     if page == "Sektör Özeti":
         sector_page(history, previous, current)
