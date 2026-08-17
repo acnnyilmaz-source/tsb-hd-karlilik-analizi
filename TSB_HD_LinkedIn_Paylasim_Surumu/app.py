@@ -1414,7 +1414,7 @@ def main() -> None:
         st.stop()
 
     with st.sidebar:
-        st.markdown("<div class='app-kicker'>TSB • Hayat Dışı</div>", unsafe_allow_html=True)
+        st.markdown("<div class='app-kicker'>HAYAT DIŞI • SİGORTA SEKTÖRÜ</div>", unsafe_allow_html=True)
         st.markdown(f"<div class='app-title'>{APP_TITLE}</div>", unsafe_allow_html=True)
         st.markdown("<div class='app-subtitle'>Sunum görünümü + analist araçları<br>Yerel veri güncelleme destekli</div>", unsafe_allow_html=True)
         st.markdown("#### Analiz Modülleri")
