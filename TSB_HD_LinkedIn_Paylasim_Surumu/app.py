@@ -37,7 +37,7 @@ from tsb_engine import (
     sorted_periods,
 )
 
-APP_TITLE = "TSB HD Kârlılık Analizi"
+APP_TITLE = "Sigorta Sektörü Kârlılık Analizi"
 APP_VERSION = "v8.3 Final"
 INFLATION_YOY_BY_PERIOD = {"2026H1": 0.3211}
 INFLATION_NOTE = "Haziran 2026 TÜFE yıllık değişim: %32,11 (TÜİK)"
