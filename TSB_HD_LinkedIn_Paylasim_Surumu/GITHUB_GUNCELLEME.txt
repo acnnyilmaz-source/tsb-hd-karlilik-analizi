@@ -1,0 +1,15 @@
+TSB HD V8.3 FINAL — CANLI UYGULAMA GUNCELLEME
+
+1) GitHub reposunda mevcut TSB_HD_LinkedIn_Paylasim_Surumu klasorunu ac.
+2) Bu paketteki dosyalari ayni klasore yukle ve var olanlari Replace/Overwrite et:
+   - app.py
+   - tsb_engine.py
+   - initial_history.json
+   - requirements.txt
+   - .streamlit/config.toml
+3) Commit changes.
+4) Streamlit mevcut public URL'de otomatik yeniden deploy olur.
+5) Son kontrol: Sektor Ozeti > Net Bilesik Referansi; Brans Analizi > KAZA > iki Sirket Dagilimi tabi; Dinamik Tablo siralama.
+
+Public surumde Veri Guncelleme menusu gosterilmez.
+Veri ve hesap motoru V8.2 ile aynidir; V8.3 Final grafik/sunum katmani duzeltmeleridir.
