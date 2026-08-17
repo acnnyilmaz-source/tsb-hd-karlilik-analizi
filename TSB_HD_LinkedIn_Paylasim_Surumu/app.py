@@ -1204,7 +1204,7 @@ def company_compare_page(history: list[dict[str, Any]], previous: str, current: 
 
 def methodology_page() -> None:
     st.title("Metodoloji")
-    st.caption("Kaynak: Türkiye Sigorta Birliği (TSB) finansal tabloları • reel büyüme için TÜİK TÜFE")
+    st.caption("Kaynak: Türkiye Sigorta Birliği finansal tabloları • reel büyüme için TÜİK TÜFE")
     st.markdown("### Kapsam")
     st.write("Yalnızca hayat dışı (HD) şirketler. Sektör toplamı: 9000 / T (HD).")
     st.markdown("### Ana branş evreni")
@@ -1227,7 +1227,7 @@ Mali Gelir Aktarımı Hariç Teknik Sonuç = Raporlanan Teknik Kâr/Zarar - 603
 Aktarım Dahil Teknik Sonuç = Raporlanan Teknik Kâr/Zarar
 Aktarım Hariç Teknik Sonuç / Brüt Prim = Aktarım Hariç Teknik Sonuç / Brüt Yazılan Prim
 Aktarım Dahil Teknik Sonuç / Brüt Prim = Raporlanan Teknik Kâr/Zarar / Brüt Yazılan Prim""",language="text")
-    st.info("Ana uygulamada TSB raporuyla uyumlu Brüt H/P (DERK Dahil) kullanılır. TSB Hasar Prim Oranları dosyasındaki DERK Hariç H/P doğrulama çalışma kitabında ayrıca izlenebilir. Teknik sonuç / brüt prim oranları teknik sonuç bloğunda sunulur; brüt H/P, masraf ve bileşik oranların doğrudan muhasebesel karşılığı olarak yorumlanmaz.")
+    st.info("Ana uygulamada Kaynak raporuyla uyumlu Brüt H/P (DERK Dahil) kullanılır. Kaynak Hasar Prim Oranları dosyasındaki DERK Hariç H/P doğrulama çalışma kitabında ayrıca izlenebilir. Teknik sonuç / brüt prim oranları teknik sonuç bloğunda sunulur; brüt H/P, masraf ve bileşik oranların doğrudan muhasebesel karşılığı olarak yorumlanmaz.")
 
     st.markdown("### Dönem Net Kârı / Zararı")
     st.code("Gelir Tablosu dosyası → MALI sayfası → 69 Dönem Net Karı Veya Zararı",language="text")
@@ -1251,7 +1251,7 @@ Branş Pazar Payı = Şirket Branş Brüt Yazılan Prim / Aynı Branş HD Sektö
 
 def update_page(history: list[dict[str, Any]], history_source: str) -> None:
     st.title("Veri Güncelleme")
-    st.caption("Yeni TSB dönemini üç kaynak dosyadan otomatik oluşturur, doğrular ve mevcut tarihçeye ekler.")
+    st.caption("Yeni dönemi üç kaynak dosyadan otomatik oluşturur, doğrular ve mevcut tarihçeye ekler.")
     st.info("Üç dosyayı aynı yükleme alanına bırakabilirsin. Uygulama Gelir Tablosu, Hasar-Prim ve Faaliyet Giderleri dosyalarını sayfa yapısından otomatik ayırt eder.")
 
     periods = sorted_periods(history)
@@ -1265,7 +1265,7 @@ def update_page(history: list[dict[str, Any]], history_source: str) -> None:
     with c3:
         kpi("Veri Kaynağı", "Aktif veri" if history_source == "active" else "Paket başlangıcı", "Yeni dönem kaydedildiğinde yerel aktif veri dosyası oluşturulur.")
 
-    uploaded = st.file_uploader("TSB dönem dosyaları (.xlsx) — tam olarak 3 dosya", type=["xlsx"], accept_multiple_files=True)
+    uploaded = st.file_uploader("Dönem kaynak dosyaları (.xlsx) — tam olarak 3 dosya", type=["xlsx"], accept_multiple_files=True)
     payload: list[tuple[str, bytes]] = []
     if uploaded:
         st.markdown("### Dosya algılama")
@@ -1435,7 +1435,7 @@ def main() -> None:
             st.caption(f"Tek dönem mevcut: {current}")
         st.divider()
         st.markdown(
-            f"<div class='small-muted'><b>{APP_VERSION}</b> · DERK dahil H/P<br>Pazar payı · reel büyüme · net kâr<br>Teknik sonuç / brüt prim<br><br>Kaynak: TSB finansal tabloları.</div>",
+            f"<div class='small-muted'><b>{APP_VERSION}</b> · DERK dahil H/P<br>Pazar payı · reel büyüme · net kâr<br>Teknik sonuç / brüt prim<br><br>Kaynak: Türkiye Sigorta Birliği’nin kamuya açık finansal tabloları.</div>",f"Bağımsız analiz çalışmasıdır; veri sağlayıcının resmi uygulaması değildir."
             unsafe_allow_html=True,
         )
 
