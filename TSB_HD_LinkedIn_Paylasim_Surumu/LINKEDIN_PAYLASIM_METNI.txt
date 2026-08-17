@@ -1,9 +1,0 @@
-Türkiye Sigorta Birliği (TSB) verileri üzerinden hayat dışı sigorta sektörünün kârlılık dinamiklerini incelemek için geliştirdiğim interaktif analiz uygulamasının paylaşım sürümünü yayına aldım.
-
-Uygulamada 2025H1–2026H1 dönemleri için sektör, branş ve şirket bazında brüt prim, hasar/prim, masraf ve bileşik oranlar incelenebiliyor. Teknik sonuç tarafında ise mali gelir aktarımı hariç teknik sonuç, mali gelir aktarımı (603) ve aktarım dahil teknik sonuç ayrı bir görünümde sunuluyor.
-
-Şirket bazındaki ekranlar yalnızca sayısal değerler, dönemsel değişimler ve benchmark farklarını gösteriyor; niteliksel sınıflama yapılmıyor.
-
-Uygulama: [BURAYA STREAMLIT LİNKİNİ EKLE]
-
-Kaynak: Türkiye Sigorta Birliği (TSB)
