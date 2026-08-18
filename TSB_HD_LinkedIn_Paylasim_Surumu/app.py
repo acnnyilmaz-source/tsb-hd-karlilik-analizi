@@ -1440,7 +1440,7 @@ def main() -> None:
         "Pazar payı · reel büyüme · net kâr<br>"
         "Teknik sonuç / brüt prim<br><br>"
         "Kaynak: Türkiye Sigorta Birliği'nin kamuya açık finansal tabloları.<br><br>"
-        "Bağımsız analiz çalışmasıdır; veri sağlayıcının resmi uygulaması değildir.</div>"
+        "Bağımsız analiz çalışmasıdır; herhangi bir kurum/şirketin resmi uygulaması değildir.</div>"
     ),
     unsafe_allow_html=True,
 )
